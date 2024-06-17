@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #container{
+            height: 400px;
+            width: 400px;
+            background-color: aqua;
+            display: flex;
+
+            transition: all 100s ease-in;
+
+        }
+        #container:hover{
+            transform: rotate(360000deg);
+        }
+        .items{
+            height: 220px;
+            width: 220px;
+            border: 2px solid black;
+            transition: all 100s ease-in;
+
+        }
+        .items:hover{
+            transform: rotate(360000deg);
+        }
+        #box1{
+            background-color: red;
+        }
+        #box2{
+            position: absolute;
+            top: 200px;
+            background-color: blue;
+        }
+        #box3{
+            position: absolute;
+            top: 200px;
+            left: 200px;
+            background-color: yellow;
+        }
+        #box4{
+            position: absolute;
+            left: 200px;
+            background-color: blueviolet;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div id="box1" class="items"></div>
+        <div id="box2" class="items"></div>
+        <div id="box3" class="items"></div>
+        <div id="box4" class="items"></div>
+    </div>
+</body>
+</html>
